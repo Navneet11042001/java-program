@@ -1,0 +1,80 @@
+
+
+import java.util.Scanner;
+public class Main
+{
+   public static void main(String[] args) {
+    int [] arr1=new int[20];
+    int [] arr2=new int[20];
+    int [] arr3=new int[40];
+    int n,i,a,m,k=0;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter n ");
+    n=sc.nextInt();
+    System.out.println("enter m ");
+    m=sc.nextInt();
+    System.out.println(" first array");
+    for(i=0;i<n;i++)
+    {
+     System.out.println("enter array elements "+(i+1));
+     arr1[i]=sc.nextInt();
+     arr3[i]=arr1[i];
+    }
+    System.out.println(" second array");
+    for(i=0;i<m;i++)
+    {
+     System.out.println("enter array elements "+(i+1));
+     arr2[i]=sc.nextInt();
+     arr3[n+i]=arr2[i];
+    }
+    System.out.println("---------------------------------");
+    System.out.println("Output");
+    for(i=0;i<n+m;i++)
+    {
+       System.out.println(" "+arr3[i]);
+    }
+
+   }
+}
+
+
+output
+
+enter n 
+4
+enter m 
+6
+first array
+enter array elements 1
+1
+enter array elements 2
+2
+enter array elements 3
+3
+enter array elements 4
+4
+second array
+enter array elements 1
+5
+enter array elements 2
+6
+enter array elements 3
+7
+enter array elements 4
+8
+enter array elements 5
+9
+enter array elements 6
+10
+---------------------------------
+Output
+1
+2
+3
+ 4
+5
+6
+ 7
+8
+9
+ 10
